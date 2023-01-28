@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <nav class="navbar page">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+        </div>
+        <img src="./images/logo-black.svg" alt="Logo" />
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count"></span>
+        </div>
+      </div>
+    </nav>
+    <!--Hero section-->
+    <section class="page-hero">
+      <div class="hero-container">
+        <h3 class="page-hero-title">Home / Product</h3>
+      </div>
+    </section>
+    <!--Sidebar-->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>Products</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>About</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!--CartOverlay-->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">Your bag</h3>
+        </header>
+        <div class="cart-items"></div>
+        <!--Footer-->
+        <footer>
+          <h3 class="cart-total text-slanted">Total:</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <section class="single-product">
+      <div class="section-center single-product-center">
+        <img
+          src="./images/main-bcg.jpeg"
+          class="img single-product-img"
+          alt="name"
+        />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title">Couch</h2>
+            <p class="single-product-company text-slanted">By Macros</p>
+            <p class="single-product-price">$30.00</p>
+            <div class="single-product-colors"></div>
+            <p class="single-product-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem perspiciatis deleniti magni dolorem aliquam debitis
+              earum vero? Aliquid nam obcaecati atque sit doloremque rerum
+              corporis pariatur inventore quo soluta eveniet at dolorum culpa ut
+              quibusdam molestiae porro autem fugiat blanditiis nobis, et velit
+              asperiores ducimus? Fugit mollitia ipsam quo fugiat, quos
+              praesentium? Soluta ad dolorum nisi quam recusandae, molestiae,
+              illum optio esse maxime.
+            </p>
+            <button class="addToCartBtn btn" data-id="id">Add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="page-loading">
+      <h2>Loading....</h2>
+    </div>
+    <script type="module" src="./src/pages/product.js"></script>
+  </body>
+</html>
